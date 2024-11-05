@@ -2,17 +2,12 @@ let ball;
 
 function setup() {
   createCanvas(400, 200);
-
   ball = new Particle();
 }
 
 
 function draw() {
   background(220);
-
-
-
-
 
 
 
@@ -26,9 +21,6 @@ function draw() {
 // }
 
 
-
-
-
   ball.update();
   ball.show();
 }
@@ -39,8 +31,6 @@ function mouseClicked() {
   let took = p5.Vector.sub(ball.pos, mPos);
 
   took.mult(0.1);
-  
-
   ball.addForce(took);
 
 
