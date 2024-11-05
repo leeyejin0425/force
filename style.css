@@ -21,17 +21,42 @@ html, body {
 h1 {
   font-size: 3em;
   font-weight: 700;
-  color: #5d3bc2;
+  color: #7a4eff;
   margin: 0;
   padding: 20px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
+  animation: colorChange 2s infinite alternate;
+}
+@keyframes colorChange {
+  from {
+    color: #c516ff;
+  }
+  to {
+    color: #0d35ff;
+  }
 }
 
 canvas {
   display: block;
-  margin-top: 30px;
+  margin-top: 80px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#resetButton {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #c516ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+#resetButton:hover {
+  background-color: #3511d5;
 }
