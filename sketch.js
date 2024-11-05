@@ -10,6 +10,12 @@ function setup() {
 function draw() {
   background(220);
 
+
+
+
+
+
+
 //   let gravity = createVector(0, 0.3);
 //   ball.addForce(gravity);
 
@@ -19,6 +25,23 @@ function draw() {
 //   ball.addForce(wind);
 // }
 
+
+
+
+
   ball.update();
   ball.show();
+}
+
+function mouseClicked() {
+
+  let mPos = createVector(mouseX, mouseY);
+  let took = p5.Vector.sub(ball.pos, mPos);
+
+  took.mult(0.1);
+  
+
+  ball.addForce(took);
+
+
 }
