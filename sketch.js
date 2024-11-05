@@ -30,7 +30,13 @@ function mouseClicked() {
   let mPos = createVector(mouseX, mouseY);
   let took = p5.Vector.sub(ball.pos, mPos);
 
-  took.mult(0.1);
+  let distance = took.mag();
+
+  if(distance>0){
+    took.setMag(10/distance);
+  }
+
+  took.mult(10);
   ball.addForce(took);
 
 
