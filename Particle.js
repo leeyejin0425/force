@@ -17,6 +17,7 @@ class Particle {
     this.pos.add(this.vel);
 
 
+    this.vel.mult(0.95);
     this.acc.set(0, 0);
     this.checkEdge();
   }
