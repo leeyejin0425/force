@@ -3,6 +3,14 @@ let ball;
 function setup() {
   createCanvas(400, 200);
   ball = new Particle();
+
+  let resetButton = select('#resetButton');
+  resetButton.mousePressed(resetParticle);
+
+}
+
+function resetParticle() {
+  ball = new Particle();
 }
 
 
@@ -41,3 +49,4 @@ function mouseClicked() {
 
 
 }
+
