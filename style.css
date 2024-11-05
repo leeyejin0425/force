@@ -3,13 +3,13 @@ html, body {
   padding: 0;
   align-content: center;
   text-align: center;
-  color: #eee;
+  color: #3511d5;
   background-color: #e7d0f6;
 }
 
 canvas {
   display: block;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
